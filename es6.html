@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>es6</title>
+	<style>
+		.box{
+			height: 50px;
+			width: 50px;
+			background: #000;
+			margin: 10px;
+		}
+		
+	</style>
+	<script>
+		/*let a = 5;
+		a = 10;
+		alert(a);*/
+	/*	{
+			let a = 5;
+			var b = 10;
+		}
+		alert(a);
+		alert(b);*/
+		
+		window.onload = function(){
+			var arrbox = document.getElementsByClassName('box');
+			
+			for(let i = 0;i < arrbox.length;i++){
+				arrbox[i].onclick = function(){
+					alert(i);
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</body>
+</html>

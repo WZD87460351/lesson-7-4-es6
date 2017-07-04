@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>es6-4</title>
+	<script>
+		/*let arr = ['xiaomi','huawei','zhongxin','chuizi']
+//		let arr2 = arr;
+		let arr2 = [];
+		for(let i = 0;i<arr.length;i++){
+			arr2.push(arr[i]);
+		}
+		arr2.push('samsung');
+		console.log(arr);
+		console.log(arr2);
+		*/
+		
+		function show(...args){
+			args.push(9);
+			alert(args.length);
+			alert(arguments.length);
+			
+		}
+		show(1,2,2,4);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

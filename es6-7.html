@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>es6-7</title>
+	<script>
+		/*function show(x,y){
+			x = x || 5;
+			y = y || 8;
+			console.log(x,y);
+		}
+		show(null,null);
+		show(undefined,undefined);*/
+		
+		/*function show(x=3,y){
+			y = y || 8;
+			console.log(x,y);
+		}
+		show(null,null);
+		show(undefined,undefined);*/
+		
+		/*function show(x,y){
+			if(x == undefined){
+				x = x || 9;
+			}
+			if(y == undefined){
+				y = y || 9;
+			}
+			console.log(x,y);
+		}
+		show(null,null);
+		show(undefined,undefined);*/
+		
+		/*function show({x=3,y=5}){
+			console.log(x,y);
+		}
+		show({});
+		show({x:1});*/
+		
+		function m1({x=0,y=0} = {}){
+			return [x,y];
+		}
+		var result = m1({x:1});
+		console.log(result);
+		
+		function m2({x,y} = {x:0,y:0}){
+			return [x,y];
+		}
+		var result2 = m2({x:1});
+		console.log(result2);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
